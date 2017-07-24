@@ -128,7 +128,7 @@ var places = {
     },
     {
       title: "OHSU Tram",
-      picture: "./images/sights/OHSU_tram.jpg",
+      picture: "./images/sights/ohsu_tram.jpg",
       caption: "Lidija takes the tram and enjoys the views from the tram everyday."
     },
     {
