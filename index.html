@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Mike and Lidija's Guide to Portland</title>
+  </head>
+  <body>
+    <h1>Mike's and Lidija's Guide to Portland</h1>
+    <nav>
+      <ul data-bind="foreach: places">
+        <li data-bind="text: $data, click: $root.goToPlace, css: { selected: $data == $root.chosenPlace() },"></li>
+      </ul>
+    </nav>
+    <main>
+      <section data-bind="foreach: chosenPlaceData">
+        <h2 data-bind="text: title" ></h2>
+        <img data-bind="attr: {src: picture}"></img>
+        <p data-bind="text: caption"></p>
+    </main>
+  </body>
+  <script src="scripts/knockout.js"></script>
+  <script src="scripts/script.js"></script>
+</html>
