@@ -1,0 +1,17 @@
+img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.selected {
+  color: blue;
+}
+
+.caption {
+  width: 325px;
+}
+
+.jumbotron {
+  text-align: center;
+}
