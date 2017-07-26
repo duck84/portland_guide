@@ -9,13 +9,13 @@
 
     <title>Mike and Lidija's Guide to Portland</title>
   </head>
-  <body class="container">
+  <body class="container-fluid">
     <div class="jumbotron">
       <div class="container">
         <h2>Mike's and Lidija's Guide to Portland</h2>
       </div>
     </div>
-    <nav class="container">
+    <nav class="container-fluid">
       <ul data-bind="foreach: places">
         <li data-bind="text: $data, click: $root.goToPlace, css: { selected: $data == $root.chosenPlace() },"></li>
       </ul>
@@ -23,7 +23,7 @@
     <main class="container">
       <section class="row" data-bind="foreach: chosenPlaceData">
         <div class="col-md-4 item ">
-          <h2 data-bind="text: title" class="caption center-block"></h2>
+          <h2 data-bind="text: title" id="title" class="caption center-block"></h2>
           <img data-bind="attr: {src: picture}" class="caption center-block"></img>
           <p data-bind="text: caption" class="caption center-block"></p>
         </div>
