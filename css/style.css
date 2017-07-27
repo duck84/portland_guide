@@ -18,6 +18,11 @@ img {
 
 .jumbotron {
   text-align: center;
+  color: white;
+  background-image: url("../images/test.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 ul {
@@ -38,4 +43,8 @@ li {
 
 li:hover {
     color: #111111;
+}
+
+.container-fluid {
+  padding: 0;
 }
