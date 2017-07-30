@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="(max-width: 1200px)" href="css/style.css">
 
     <title>Mike and Lidija's Guide to Portland</title>
   </head>
-  <body class="container-fluid">
+  <body>
     <div class="jumbotron">
       <div class="container">
         <h2>Mike's and Lidija's <br/> Guide to Portland</h2>
@@ -20,11 +21,11 @@
         <li data-bind="text: $data, click: $root.goToPlace, css: { selected: $data == $root.chosenPlace() },"></li>
       </ul>
     </nav>
-    <main class="container">
+    <main class="container-fluid">
       <section class="row" data-bind="foreach: chosenPlaceData">
-        <div class="col-md-4 item ">
+        <div class="col-md-4 col-sm-6 item">
           <h2 data-bind="text: title" id="title" class="caption center-block"></h2>
-          <img data-bind="attr: {src: picture}" class="caption center-block"></img>
+          <img data-bind="attr: {src: picture, alt: alt}" class="caption center-block"></img>
           <p data-bind="text: caption" class="caption center-block"></p>
         </div>
     </main>
